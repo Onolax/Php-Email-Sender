@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, "Open Sans", sans-serif;
+}
+
+main,
+body {
+    background-image: url("Background-Images-in-Emails.jpg");
+    background-size: auto;
+
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 0.5em 0;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    padding: 1em;
+    background-color: #85e7f4;
+}
+
+h2 {
+    margin: auto;
+    width: 25%;
+    border-radius: 30px;
+    background-color: #0fa830;
+    box-shadow: inset 5em 1em rgb(49, 199, 164);
+}
+
+.red {
+    color: red;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+
+@media screen and (max-width: 800px) {
+    section {
+        width: 100%;
+    }
+
+    form {
+        border-radius: 0;
+    }
+}
+
+div {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    width: 100%;
+    text-align: start;
+    margin: 0.3em 0;
+}
+
+
+
+label {
+    font-size: 20px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    color: #073b4c
+}
+
+input,
+textarea {
+    border: 2px solid #d2dbcf;
+    border-radius: 0.4em;
+    width: 80%;
+    margin: 0.6em auto;
+    transition: width 0.2s ease-in, border 0.1s ease-in;
+}
+
+
+
+input {
+    padding: 0.2em;
+}
+
+
+
+.big:focus {
+    padding: 0.3em;
+    width: 90%;
+    font-size: 18px;
+    border: 2px solid #00b4d8;
+    outline: none;
+}
+
+
+
+.send {
+    background-color: #188f9a;
+    font-size: 1.3em;
+    padding: 0.3em 1.8em;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    color: #efdfda;
+    font-weight: 700;
+    width: 15%;
+    text-align: center;
+    min-width: 150px;
+    transition: all 0.1s ease-in;
+}
+
+.send:hover {
+    color: white;
+    background-color: #62afc4;
+    transform: scale(1.2);
+}
